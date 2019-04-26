@@ -77,11 +77,13 @@
 
 
         <div class="forsideoverskrift"></div>
-        <div class="forsidetekst"></div>
-        <div class="forsideindhold">
 
+        <div class="forsideindhold">
+            <div class="forsidetekst"></div>
             <div class="forsidetekst2"></div>
             <div class="forsidetekst3"></div>
+            <div class="forsidetekst4"></div>
+
         </div>
 
         <div class="forsidebilleder">
@@ -180,7 +182,7 @@
 
             document.querySelector("header").innerHTML += `<style>
         header {
-            background-image: url(${forside.splashforside.guid}) 
+            background-image: url(${forside.splashforside.guid})
         }
     </style>
 `;
@@ -192,7 +194,7 @@
             document.querySelector(".forsidetekst").innerHTML += forside.tekst_copy;
             document.querySelector(".forsidetekst2").innerHTML += forside.menubilledetekst1;
             document.querySelector(".forsidetekst3").innerHTML += forside.menubilledetekst1_copy;
-            document.querySelector(".forsidetekst3").innerHTML += forside.menubilledetekst1_copy_copy;
+            document.querySelector(".forsidetekst4").innerHTML += forside.menubilledetekst1_copy_copy;
 
 
         };
