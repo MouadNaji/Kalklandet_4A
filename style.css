@@ -1,0 +1,376 @@
+/*** SPLASH ***/
+/*** SPLASH ***/
+ header {
+        
+        background-repeat: no-repeat;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+/**** BODY ****/
+/**** BODY ****/
+
+.center {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 1rem;
+    
+    
+}
+.Logo {}
+
+.DropDownMenu {}
+
+/***************************************DropDownMenuStart*********************************************/
+/***************************************DropDownMenuStart*********************************************/
+.Logo {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1rem;
+    width: 2rem;
+    padding-top: 0.1rem;
+}
+
+.Overskrift {
+    font-size: 1.2rem;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding-bottom: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+
+}
+
+.dropDown img {
+    height: 1rem;
+    width: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.random {
+    height: 60rem;
+    width: 10vw;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 7px 5px;
+    z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(254, 100, 0);
+    color: white;
+}
+
+.lillemenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 10rem
+}
+
+.tekstmenu {
+    display: none;
+}
+
+.pilned {
+    height: 1rem;
+    width: 2rem;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+@media only screen and (min-width: 500px) {
+    .Logo {
+        height: 3rem;
+        width: 4rem;
+    }
+
+    .Overskrift {
+        font-size: 1.8rem;
+    }
+
+    .bruger {
+        display: none;
+    }
+
+    .tekstmenu {
+        display: block;
+        font-size: 0.8rem;
+
+    }
+
+    .pilned {
+        display: block;
+        padding-top: 0.6rem;
+    }
+
+    .pilnedbeholder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .Overskrift {
+        font-size: 2.2rem;
+        padding-top: 0;
+    }
+
+    .Logo {
+        height: 4rem;
+        width: 5rem;
+        padding-bottom: 0:
+    }
+
+    .pilnedbeholder {
+        padding-left: 0.3rem;
+    }
+
+
+}
+
+
+
+
+
+/************** FOOTER FOOTER FOOTER ******************/
+/************** FOOTER FOOTER FOOTER ******************/
+
+
+
+img {
+    width: 100%;
+
+}
+
+
+#insta {
+    width: 15vw;
+    Height: auto;
+
+}
+
+#facebook {
+
+    width: 15vw;
+    Height: auto;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:602px) {
+
+    #insta {
+        width: 25vw;
+        Height: auto;
+
+    }
+
+    #facebook {
+
+        width: 25vw;
+        Height: auto;
+    }
+
+
+    .box {
+
+        flex-grow: 1;
+        flex-basis: 100px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 3px;
+        padding: 1rem;
+
+    }
+
+
+
+
+}
+
+
+@media only screen and (min-width:601px) {
+
+    .icon img {
+        display: none;
+
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+
+
+    .SoMe {
+
+        display: none;
+    }
+
+}
+
+
+
+
+
+footer {
+    background-color: #efc696;
+    padding: 5vh;
+    margin: 5vw 0vw 0vh 0vh;
+    align-content: center;
+
+
+}
+
+.footerinfo {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.box {
+
+    flex-grow: 1;
+    flex-basis: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 10px;
+
+
+}
+
+.icon {
+
+    width: 35vw;
+    Height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+/***************FONTS FONTS FONTS*********************/
+/***************FONTS FONTS FONTS*********************/
+
+
+
+@font-face {
+    font-family: 'limestoneregular';
+    src: url('limestone_regular-webfont.woff2') format('woff2'),
+        url('limestone_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: limestoneregular;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: limestoneregular;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: limestoneregular;
+    font-weight: bold;
+    font-size: 1.8rem;
+    
+}
+
+h4 {
+    font-family: limestoneregular;
+    font-weight: bold;
+    font-size: 1.6rem;
+    
+}
+
+h5 {
+    font-family: limestoneregular;
+    font-weight: bold;
+    font-size: 1.4rem;
+    
+}
+
+h6 {
+    font-family: limestoneregular;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+p {
+    font-family: limestoneregular;
+}
+
+footer {
+    font-family: limestoneregular;
+    
+}
+
+
