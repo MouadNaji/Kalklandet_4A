@@ -1,12 +1,12 @@
 /*** SPLASH ***/
 /*** SPLASH ***/
- header {
-        
-        background-repeat: no-repeat;
-        height: 60vh;
-        background-size: cover;
-        background-position: center;
-    }
+header {
+
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
 
 /**** BODY ****/
 /**** BODY ****/
@@ -15,9 +15,10 @@
     margin-left: 20vw;
     margin-right: 20vw;
     margin-top: 1rem;
-    
-    
+
+
 }
+
 .Logo {}
 
 .DropDownMenu {}
@@ -341,21 +342,21 @@ h3 {
     font-family: limestoneregular;
     font-weight: bold;
     font-size: 1.8rem;
-    
+
 }
 
 h4 {
     font-family: limestoneregular;
     font-weight: bold;
     font-size: 1.6rem;
-    
+
 }
 
 h5 {
     font-family: limestoneregular;
     font-weight: bold;
     font-size: 1.4rem;
-    
+
 }
 
 h6 {
@@ -366,11 +367,10 @@ h6 {
 
 p {
     font-family: limestoneregular;
+    font-weight: 600;
 }
 
 footer {
     font-family: limestoneregular;
-    
+
 }
-
-
