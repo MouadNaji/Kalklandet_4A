@@ -208,33 +208,43 @@ img {
 
 @media only screen and (min-width:602px) {
 
+    .SoMe {
+
+        display: flex;
+
+
+    }
+
+
+
     #insta {
-        width: 25vw;
+        width: 7vw;
         Height: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
 
     }
 
     #facebook {
 
-        width: 25vw;
+        width: 7vw;
         Height: auto;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
 
-    .box {
-
-        flex-grow: 1;
-        flex-basis: 100px;
+    .footerinfo {
 
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
-        margin: 3px;
-        padding: 1rem;
+        margin: 3rem;
 
     }
 
-
+    .box {
+        margin: 2rem;
+    }
 
 
 }
@@ -262,49 +272,44 @@ img {
         display: none;
     }
 
-}
+
+    footer {
+        background-color: #efc696;
+        padding: 5vh;
+        margin: 5vw 0vw 0vh 0vh;
+        align-content: center;
 
 
+    }
+
+    .footerinfo {
+
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        flex-wrap: wrap;
+    }
+
+    .box {
+
+        flex-grow: 1;
+        flex-basis: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 10px;
 
 
+    }
 
-footer {
-    background-color: #efc696;
-    padding: 5vh;
-    margin: 5vw 0vw 0vh 0vh;
-    align-content: center;
+    .icon {
 
+        width: 35vw;
+        Height: auto;
 
-}
-
-.footerinfo {
-
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    flex-wrap: wrap;
-}
-
-.box {
-
-    flex-grow: 1;
-    flex-basis: 100px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 10px;
-
-
-}
-
-.icon {
-
-    width: 35vw;
-    Height: auto;
+    }
 
 }
-
-
 
 
 
