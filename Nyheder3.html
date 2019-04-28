@@ -10,9 +10,9 @@
 
 <body>
 
-<header>
+    <header>
         <div class="head">
-           <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
+            <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
             <h1 class="Overskrift" id="Overskrift">Kalklandet Østsjællands Musem</h1>
         </div>
         <div class="dropdown">
@@ -33,10 +33,11 @@
             </div>
         </div>
     </header>
+    <div class="splash"></div>
+    <div class="indhold"></div>
 
 
-
-  <footer>
+    <footer>
 
 
 
@@ -93,7 +94,57 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+        document.addEventListener("DOMContentLoaded", hentJson2);
+
+
+        let forside;
+        let forsideen;
+
+        async function hentJson() {
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+            //henter data filen
+            const myJson = await fetch(url);
+            //den hentede data skal tolkes som json
+            forside = await myJson.json();
+            //kald funktion der viser data i DOM
+
+            visIndhol2();
+
+        };
+        async function hentJson2() {
+
+
+            const urll = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/single/263";
+            //henter data filen
+            const myJsonon = await fetch(urll);
+            //den hentede data skal tolkes som json
+            forsideen = await myJsonon.json();
+            //kald funktion der viser data i DOM
+
+            visIndhold();
+
+        };
+
+        function visIndhold() {
+
+
+            document.querySelector(".indhold").innerHTML += forsideen.titel;
+            document.querySelector(".indhold").innerHTML += forsideen.tekst;
+
+            document.querySelector(".indhold").innerHTML += `<img class="billede" src=${forsideen.billede.guid} alt="billede">`;
+
+
+
+        };
+
+        function visIndhol2() {
+            console.log(forside)
+            document.querySelector(".splash").innerHTML += `<img class="SplashBillede" src=${forside.splashforside.guid} alt="billede">`;
+
+        };
+    </script>
 </body>
 
 </html>
