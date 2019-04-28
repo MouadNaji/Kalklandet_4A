@@ -10,9 +10,9 @@
 
 <body>
 
-<header>
+    <header>
         <div class="head">
-           <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
+            <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
             <h1 class="Overskrift" id="Overskrift">Kalklandet Østsjællands Musem</h1>
         </div>
         <div class="dropdown">
@@ -40,9 +40,25 @@
         </ul>
     </header>
 
+    <div class="splash"></div>
+    <div class="container">
+        <div class="titel1"></div>
+        <div class="tekst1"></div>
+
+        <div class="titel2"></div>
+        <div class="tekst2"></div>
+
+        <div class="titel3"></div>
+        <div class="tekst3"></div>
+
+        <div class="titel4"></div>
+        <div class="tekst4"></div>
+    </div>
+    <div class="googlemaps"></div>
 
 
-  <footer style="background-color:#786d60;">
+
+    <footer style="background-color:#786d60;">
 
 
 
@@ -94,13 +110,60 @@
             </div>
         </div>
 
-
-
-
     </footer>
 
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson2);
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+
+        let omosnyheder;
+
+        async function hentJson2() {
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/FindVej/213";
+            //henter data filen
+            const myJson = await fetch(url);
+            //den hentede data skal tolkes som json
+            omosnyheder = await myJson.json();
+            //kald funktion der viser data i DOM
+
+            visIndhold2();
+        };
+
+        function visIndhold2() {
+            console.log(omosnyheder)
+            document.querySelector(".titel1").innerHTML += omosnyheder.titel;
+            document.querySelector(".titel2").innerHTML += omosnyheder.titel_copy;
+            document.querySelector(".titel3").innerHTML += omosnyheder.titel_copy2;
+            document.querySelector(".titel4").innerHTML += omosnyheder.titel_copy4;
+
+            document.querySelector(".tekst1").innerHTML += omosnyheder.tekst;
+            document.querySelector(".tekst2").innerHTML += omosnyheder.tekst_copy_2;
+            document.querySelector(".tekst3").innerHTML += omosnyheder.tekst_copy_copy;
+            document.querySelector(".tekst4").innerHTML += omosnyheder.tekst_copy4;
+
+        }
+        let forside;
+
+        async function hentJson() {
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+            //henter data filen
+            const myJson = await fetch(url);
+            //den hentede data skal tolkes som json
+            forside = await myJson.json();
+            //kald funktion der viser data i DOM
+
+            visIndhold();
+
+        };
+
+        function visIndhold() {
+            console.log(forside)
+            document.querySelector(".splash").innerHTML += `<img class="SplashBillede" src=${forside.splashforside.guid} alt="billede">`;
+
+        };
+    </script>
 </body>
 
 </html>
