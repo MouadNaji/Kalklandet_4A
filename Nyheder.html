@@ -36,7 +36,7 @@
             </div>
         </div>
     </header>
-
+    <div class="splash"></div>
     <div class="nyheder_container1">
         <div class="nyheder_billede1"></div>
         <div class="nyheder_indhold1">
@@ -116,6 +116,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", hentJson2);
+        document.addEventListener("DOMContentLoaded", hentJson);
 
 
         let omosnyheder;
@@ -149,6 +150,24 @@
             document.querySelector(".nyhedertekst2").innerHTML += omosnyheder.tekst_copy;
             document.querySelector(".nyhedertekst3").innerHTML += omosnyheder.tekst_copy_copy;
         }
+
+        async function hentJson() {
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+            //henter data filen
+            const myJson = await fetch(url);
+            //den hentede data skal tolkes som json
+            forside = await myJson.json();
+            //kald funktion der viser data i DOM
+
+            visIndhold();
+
+        };
+
+        function visIndhold() {
+            console.log(forside)
+            document.querySelector(".splash").innerHTML += `<img class="SplashBillede" src=${forside.splashforside.guid} alt="billede">`;
+
+        };
     </script>
 </body>
 
