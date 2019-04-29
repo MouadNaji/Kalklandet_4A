@@ -2,230 +2,269 @@
 <html lang="da">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forside</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .splash {
-        background-size: cover;
+	.splash {
+		background-size: cover;
 
-    }
+	}
 
 
 
-    .nyheder_container1,
-    .nyheder_container2,
-    .nyheder_container3 {
-        display: flex;
-        border: .3vw solid black;
-        margin-bottom: 1vw;
-    }
+	.nyheder_container1,
+	.nyheder_container2,
+	.nyheder_container3 {
+		display: flex;
+		border: .3vw solid rgb(254, 100, 0);
+		margin-bottom: 5vw;
+	}
 
-    .nyheder_indhold1,
-    .nyheder_indhold2,
-    .nyheder_indhold3 {
-        background: rgba(255, 255, 255, 0.5);
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
+	.nyheder_indhold1,
+	.nyheder_indhold2,
+	.nyheder_indhold3 {
+		/*        background: rgba(255, 255, 255, 0.5);*/
+		background: rgb(254, 100, 0);
+		padding-left: 2vw;
+		padding-right: 1vw;
 
-    h1 {
-        color: rgb(254, 100, 0);
-    }
+	}
 
-    .Overskrift {
-        margin-left: 7vw;
+	h1 {
+		color: rgb(254, 100, 0);
+	}
 
-    }
+	.Overskrift {
+		margin-left: 7vw;
 
-    p,
-    h2 {
-        color: black;
-    }
+	}
+
+	p,
+	h2 {
+		color: white;
+	}
+
+	p {
+		font-weight: 300;
+	}
+
+	@media only screen and (max-width:850px) {
+
+
+		header {
+			height: 40vh;
+		}
+
+		.center {
+			margin-left: 1vw;
+			margin-right: 1vw;
+		}
+
+		.nyheder_container1,
+		.nyheder_container2,
+		.nyheder_container3 {
+			display: block;
+			border: 2vw solid rgb(254, 100, 0);
+			margin-bottom: 8vw;
+			padding: 0;
+		}
+
+		.nyheder_indhold1,
+		.nyheder_indhold2,
+		.nyheder_indhold3 {
+			padding-bottom: 2vw;
+			padding-top: 1vw;
+			padding-left: 3vw;
+			padding-right: 2vw;
+		}
+	}
+
 </style>
 
 <body>
 
-    <header>
-        <div class="head">
-            <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
-            <h1 class="Overskrift" id="Overskrift">KALKLANDET - Østsjællands Museum</h1>
-        </div>
-        <div class="dropdown">
-            <span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
-                <div class="pilnedbeholder">
-                    <h1 class="tekstmenu">Info</h1>
-                    <div class="pilned">
-                        <img alt="pilned" src="Billeder/DropDown/pilned.png">
-                    </div>
-                </div>
-            </span>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="OmOs.html">Om os</a></li>
-                    <li><a href="Nyheder.html">Nyheder</a></li>
-                    <li><a href="FlereAttraktioner%20.html">Flere attraktioner</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="splash"></div>
-    </header>
-    <div class="center">
-        <a href="Nyheder2.html">
-            <div class="nyheder_container1">
-                <div class="nyheder_billede1"></div>
-                <div class="nyheder_indhold1">
-                    <div class="nyheder_overskrift1"></div>
-                    <div class="nyheder_tekst1"></div>
-                </div>
-            </div>
-        </a>
-        <a href="Nyheder1.html">
-            <div class="nyheder_container2">
-                <div class="nyheder_billede2"></div>
-                <div class="nyheder_indhold2">
-                    <div class="nyheder_overskrift2"></div>
-                    <div class="nyheder_tekst2"></div>
-                </div>
-            </div>
-        </a>
-        <a href="Nyheder3.html">
-            <div class="nyheder_container3">
-                <div class="nyheder_billede3"></div>
-                <div class="nyheder_indhold3">
-                    <div class="nyheder_overskrift3"></div>
-                    <div class="nyheder_tekst3"></div>
-                </div>
-            </div>
-        </a>
+	<header>
+		<div class="head">
+			<div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
+			<h1 class="Overskrift" id="Overskrift">KALKLANDET - Østsjællands Museum</h1>
+		</div>
+		<div class="dropdown">
+			<span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
+				<div class="pilnedbeholder">
+					<h1 class="tekstmenu">Info</h1>
+					<div class="pilned">
+						<img alt="pilned" src="Billeder/DropDown/pilned.png">
+					</div>
+				</div>
+			</span>
+			<div class="dropdown-content">
+				<ul>
+					<li><a href="OmOs.html">Om os</a></li>
+					<li><a href="Nyheder.html">Nyheder</a></li>
+					<li><a href="FlereAttraktioner%20.html">Flere attraktioner</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="splash"></div>
+	</header>
+	<div class="center">
+		<a href="Nyheder2.html">
+			<div class="nyheder_container1">
+				<div class="nyheder_billede1"></div>
+				<div class="nyheder_indhold1">
+					<div class="nyheder_overskrift1"></div>
+					<div class="nyheder_tekst1"></div>
+				</div>
+			</div>
+		</a>
+		<a href="Nyheder1.html">
+			<div class="nyheder_container2">
+				<div class="nyheder_billede2"></div>
+				<div class="nyheder_indhold2">
+					<div class="nyheder_overskrift2"></div>
+					<div class="nyheder_tekst2"></div>
+				</div>
+			</div>
+		</a>
+		<a href="Nyheder3.html">
+			<div class="nyheder_container3">
+				<div class="nyheder_billede3"></div>
+				<div class="nyheder_indhold3">
+					<div class="nyheder_overskrift3"></div>
+					<div class="nyheder_tekst3"></div>
+				</div>
+			</div>
+		</a>
 
-    </div>
-    <footer style="background-color:rgb(254, 100, 0);">
-
-
-
-        <div class="footerinfo">
-
-            <div class="box">
-
-                <p style="color: white">
-                    <b>Østsjællands Museum<br>
-                        Rådhusvej 2<br>
-                        4640 Faxe<br>
-                        museum@oesm.dk<br><br>
-                        +45 56502806<br>
-                        Telefonen er åben mandag til fredag<br>
-                        fra kl. 9 til 15.</b></p>
-            </div>
-            <div class="box">
-                <p style="color: white">
-                    <b>Kalklandet 2019:</b><br><br>
-                    1. april – 30. juni - alle dage kl. 11.00 - 15.00<br>
-                    1. juli – 30. september - alle dage kl. 10.00 - 17.00<br>
-                    1. oktober – 31. oktober - alle dage kl. 11.00 - 15.00<br><br>
-
-                    <b>Særlige åbningstider:</b><br><br>
-
-                    Efterårsferie i uge 42<br>
-                    Geomuseum Faxe - alle dage kl. 10.00 - 17.00<br>
-                    Koldkrigsmuseum Stevnsfort - alle dage kl. 10.00 - 17.00<br>
-                </p>
-            </div>
-            <div class="box">
-                <div class="SoMe">
-                    <div id="insta">
-                        <h4 style="color: white;">Find os på Instagram</h4>
-                        <img src="Billeder/Footer/Insta.png" alt="Langinsta">
-
-                    </div>
-                    <div id="facebook">
-                        <h4 style="color: white;">Find os på Facebook</h4>
-                        <img src="Billeder/Footer/Fb.png" alt="Langface">
-
-                    </div>
-                </div>
-
-
-                <div class="icon">
-                    <img src="Billeder/Footer/Insta.png" alt="facelogo">
-                </div>
-
-                <div class="icon">
-                    <img src="Billeder/Footer/Fb.png" alt="instalogo">
-                </div>
-            </div>
-        </div>
+	</div>
+	<footer style="background-color:rgb(254, 100, 0);">
 
 
 
+		<div class="footerinfo">
 
-    </footer>
+			<div class="box">
 
-    <script>
-        document.addEventListener("DOMContentLoaded", hentJson2);
-        document.addEventListener("DOMContentLoaded", hentJson);
+				<p style="color: white">
+					<b>Østsjællands Museum<br>
+						Rådhusvej 2<br>
+						4640 Faxe<br>
+						museum@oesm.dk<br><br>
+						+45 56502806<br>
+						Telefonen er åben mandag til fredag<br>
+						fra kl. 9 til 15.</b></p>
+			</div>
+			<div class="box">
+				<p style="color: white">
+					<b>Kalklandet 2019:</b><br><br>
+					1. april – 30. juni - alle dage kl. 11.00 - 15.00<br>
+					1. juli – 30. september - alle dage kl. 10.00 - 17.00<br>
+					1. oktober – 31. oktober - alle dage kl. 11.00 - 15.00<br><br>
+
+					<b>Særlige åbningstider:</b><br><br>
+
+					Efterårsferie i uge 42<br>
+					Geomuseum Faxe - alle dage kl. 10.00 - 17.00<br>
+					Koldkrigsmuseum Stevnsfort - alle dage kl. 10.00 - 17.00<br>
+				</p>
+			</div>
+			<div class="box">
+				<div class="SoMe">
+					<div id="insta">
+						<h4 style="color: white;">Find os på Instagram</h4>
+						<img src="Billeder/Footer/Insta.png" alt="Langinsta">
+
+					</div>
+					<div id="facebook">
+						<h4 style="color: white;">Find os på Facebook</h4>
+						<img src="Billeder/Footer/Fb.png" alt="Langface">
+
+					</div>
+				</div>
 
 
-        let omosnyheder;
+				<div class="icon">
+					<img src="Billeder/Footer/Insta.png" alt="facelogo">
+				</div>
 
-        async function hentJson2() {
-            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/OmOs/304";
-            //henter data filen
-            const myJson = await fetch(url);
-            //den hentede data skal tolkes som json
-            omosnyheder = await myJson.json();
-            //kald funktion der viser data i DOM
-
-            visIndhold2();
-        };
-
-        function visIndhold2() {
-            console.log(omosnyheder)
-
-            document.querySelector(".nyheder_billede1").innerHTML += `<img class="billede" src=${omosnyheder.billede_optional.guid} alt="billede">`;
-
-            document.querySelector(".nyheder_billede2").innerHTML += `<img class="billede" src=${omosnyheder.billede_optional_copy_copy.guid} alt="billede">`;
-
-            document.querySelector(".nyheder_billede3").innerHTML += `<img class="billede" src=${omosnyheder.billede_optional_copy_copy_copy.guid} alt="billede">`;
+				<div class="icon">
+					<img src="Billeder/Footer/Fb.png" alt="instalogo">
+				</div>
+			</div>
+		</div>
 
 
-            document.querySelector(".nyheder_overskrift1").innerHTML += omosnyheder.titel;
-            document.querySelector(".nyheder_overskrift2").innerHTML += omosnyheder.titel_copy;
-            document.querySelector(".nyheder_overskrift3").innerHTML += omosnyheder.titel_copy_copy;
 
-            document.querySelector(".nyheder_tekst1").innerHTML += omosnyheder.tekst;
-            document.querySelector(".nyheder_tekst2").innerHTML += omosnyheder.tekst_copy;
-            document.querySelector(".nyheder_tekst3").innerHTML += omosnyheder.tekst_copy_copy;
-        }
 
-        async function hentJson() {
-            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
-            //henter data filen
-            const myJson = await fetch(url);
-            //den hentede data skal tolkes som json
-            forside = await myJson.json();
-            //kald funktion der viser data i DOM
+	</footer>
 
-            visIndhold();
+	<script>
+		document.addEventListener("DOMContentLoaded", hentJson2);
+		document.addEventListener("DOMContentLoaded", hentJson);
 
-        };
 
-        function visIndhold() {
-            console.log(forside)
-            //			document.querySelector(".splash").innerHTML += `<img class="SplashBillede" src=${forside.splashforside.guid} alt="billede">`;
-            //
-            //		};
+		let omosnyheder;
 
-            document.querySelector("header").innerHTML += `<style>
+		async function hentJson2() {
+			const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/OmOs/304";
+			//henter data filen
+			const myJson = await fetch(url);
+			//den hentede data skal tolkes som json
+			omosnyheder = await myJson.json();
+			//kald funktion der viser data i DOM
+
+			visIndhold2();
+		};
+
+		function visIndhold2() {
+			console.log(omosnyheder)
+
+			document.querySelector(".nyheder_billede1").innerHTML += `<img class="billede" src=${omosnyheder.billede_optional.guid} alt="billede">`;
+
+			document.querySelector(".nyheder_billede2").innerHTML += `<img class="billede" src=${omosnyheder.billede_optional_copy_copy.guid} alt="billede">`;
+
+			document.querySelector(".nyheder_billede3").innerHTML += `<img class="billede" src=${omosnyheder.billede_optional_copy_copy_copy.guid} alt="billede">`;
+
+
+			document.querySelector(".nyheder_overskrift1").innerHTML += omosnyheder.titel;
+			document.querySelector(".nyheder_overskrift2").innerHTML += omosnyheder.titel_copy;
+			document.querySelector(".nyheder_overskrift3").innerHTML += omosnyheder.titel_copy_copy;
+
+			document.querySelector(".nyheder_tekst1").innerHTML += omosnyheder.tekst;
+			document.querySelector(".nyheder_tekst2").innerHTML += omosnyheder.tekst_copy;
+			document.querySelector(".nyheder_tekst3").innerHTML += omosnyheder.tekst_copy_copy;
+		}
+
+		async function hentJson() {
+			const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+			//henter data filen
+			const myJson = await fetch(url);
+			//den hentede data skal tolkes som json
+			forside = await myJson.json();
+			//kald funktion der viser data i DOM
+
+			visIndhold();
+
+		};
+
+		function visIndhold() {
+			console.log(forside)
+			//			document.querySelector(".splash").innerHTML += `<img class="SplashBillede" src=${forside.splashforside.guid} alt="billede">`;
+			//
+			//		};
+
+			document.querySelector("header").innerHTML += `<style>
         header {
             background-image: url(${forside.splashforside.guid})
         }
     </style>
 `
-        };
-    </script>
+		};
+
+	</script>
 </body>
 
 </html>
