@@ -10,7 +10,13 @@
 
 <body>
     <style>
-        .lillemenu li a:hover {
+        h1 {
+            color: rgb(254, 100, 0);
+
+        }
+
+        .lillemenu li a {
+            color: white;
             background-color: #87b52d;
         }
 
@@ -39,7 +45,7 @@
     <header>
         <div class="head">
             <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
-            <h1 class="Overskrift" id="Overskrift">Kalklandet Østsjællands Musem</h1>
+            <h1 class="Overskrift" id="Overskrift">KALKLANDET - Østsjællands Museum</h1>
         </div>
         <div class="dropdown">
             <span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
@@ -170,7 +176,7 @@
         }
 
         async function hentJson() {
-            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Museumer/160";
             //henter data filen
             const myJson = await fetch(url);
             //den hentede data skal tolkes som json
@@ -185,7 +191,7 @@
             console.log(forside)
             document.querySelector(".splash").innerHTML += `<style>
         header {
-            background-image: url(${forside.splashforside.guid})
+            background-image: url(${forside.splashbillede.guid})
         }
     </style>
 `;

@@ -11,6 +11,11 @@
 <body>
 
     <style>
+        h1 {
+            color: rgb(254, 100, 0);
+
+        }
+
         .lillemenu {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -20,7 +25,8 @@
 
         }
 
-        .lillemenu li a:hover {
+        .lillemenu li a {
+            color: white;
             background-color: #0082ad;
         }
 
@@ -50,7 +56,7 @@
     <header>
         <div class="head">
             <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
-            <h1 class="Overskrift" id="Overskrift">Kalklandet Østsjællands Musem</h1>
+            <h1 class="Overskrift" id="Overskrift">KALKLANDET - Østsjællands Museum</h1>
         </div>
         <div class="dropdown">
             <span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
@@ -190,7 +196,7 @@
         let forside;
 
         async function hentJson() {
-            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Museumer/268";
             //henter data filen
             const myJson = await fetch(url);
             //den hentede data skal tolkes som json
@@ -203,9 +209,9 @@
 
         function visIndhold() {
             console.log(forside)
-            document.querySelector(".splash").innerHTML += `<style>
+            document.querySelector("header").innerHTML += `<style>
         header {
-            background-image: url(${forside.splashforside.guid})
+            background-image: url(${forside.splashbillede.guid})
         }
     </style>
 `;
