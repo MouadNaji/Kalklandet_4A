@@ -29,6 +29,11 @@ body {
 
 .DropDownMenu {}
 
+.lillemenu li a:hover {
+    color: black;
+    background-color: white;
+}
+
 /***************************************DropDownMenuStart*********************************************/
 /***************************************DropDownMenuStart*********************************************/
 .Logo {
