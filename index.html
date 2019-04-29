@@ -2,328 +2,334 @@
 <html lang="da">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forside</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 
 <style>
-    .forsideinfotekst {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 20px;
-    }
+	.forsideinfotekst {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 20px;
+	}
 
-    h1 {
-        color: rgb(254, 100, 0);
-    }
+	h1 {
+		color: rgb(254, 100, 0);
+	}
 
-    p {
-        color: white;
-        font-weight: 400;
-    }
+	p {
+		color: white;
+		font-weight: 400;
+	}
 
-    header {
-        z-index: 0;
-    }
+	header {
+		z-index: 0;
+	}
 
-    .forsidecontainer {
-        z-index: 1;
-        position: absolute;
-        top: 40%;
+	.forsidecontainer {
+		z-index: 1;
+		position: absolute;
+		top: 40%;
 
-    }
+	}
 
-    .center {
-        background: rgba(255, 255, 255, 0.5);
-        padding: .5vw;
-    }
+	.center {
+		background: rgba(255, 255, 255, 0.5);
+		padding: .5vw;
+	}
 
-    .Overskrift {
-        margin-left: 7vw;
+	.Overskrift {
+		margin-left: 7vw;
 
-    }
+	}
 
-    .forsideoverskrift,
-    .forsidetekst {
-        width: 20vw;
-        display: none;
+	.forsideoverskrift,
+	.forsidetekst {
+		width: 20vw;
+		display: none;
 
-    }
+	}
 
-    .forsidebilleder {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 20px;
+	.forsidebilleder {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 20px;
 
-    }
+	}
 
-    .forsidebillede1,
-    .forsidebillede2,
-    .forsidebillede3 {
-        align-content: center;
-        overflow: hidden;
-        justify-content: end;
+	.forsidebillede1,
+	.forsidebillede2,
+	.forsidebillede3 {
+		align-content: center;
+		overflow: hidden;
+		justify-content: end;
 
-    }
-
-
-    .forsideindhold {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-column-gap: 1.5vw;
-        margin-bottom: 1vw;
-    }
-
-    .forsideoverskrift,
-    .forsidetekst,
-    .forsidetekst2,
-    .forsidetekst3,
-    .forsidetekst4 {
-        font-family: limestoneregular;
-    }
-
-    .forsidetekst2 {
-        padding: .4vw;
-        height: 140px;
-        background-color: #786d60;
-    }
-
-    .forsidetekst4 {
-        padding: .4vw;
-        height: 140px;
-        background-color: rgb(0, 130, 172);
-    }
-
-    .forsidetekst3 {
-        height: 140px;
-        padding: .4vw;
-        background-color: rgb(135, 181, 45);
-    }
+	}
 
 
+	.forsideindhold {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 1.5vw;
+		margin-bottom: 1vw;
+	}
 
-    @media only screen and (max-width:600px) {
-        .forsidebilleder {
-            grid-column-gap: 1.5%;
+	.forsideoverskrift,
+	.forsidetekst,
+	.forsidetekst2,
+	.forsidetekst3,
+	.forsidetekst4 {
+		font-family: limestoneregular;
+	}
 
-        }
+	.forsidetekst2 {
+		padding: .4vw;
+		height: 140px;
+		background-color: #786d60;
+	}
 
-        .forsidecontainer {
-            z-index: 1;
-            position: static;
-            top: 22vw;
-        }
+	.forsidetekst4 {
+		padding: .4vw;
+		height: 140px;
+		background-color: rgb(0, 130, 172);
+	}
+
+	.forsidetekst3 {
+		height: 140px;
+		padding: .4vw;
+		background-color: rgb(135, 181, 45);
+	}
 
 
 
-        .center {
-            margin-left: 1vw;
-            margin-right: 1vw;
-            margin-top: 1rem;
-        }
+	@media only screen and (max-width:600px) {
+		.forsidebilleder {
+			grid-column-gap: 1.5%;
 
-        header {
-            height: 40vh;
-            width: 100%;
-        }
+		}
 
-        .forsidetekst2,
-        .forsidetekst3,
-        .forsidetekst4 {
-            height: 100%;
-            padding: 1vw;
-        }
-
-    }
-
-    @media only screen and (max-width:570px) {
+		.forsidecontainer {
+			z-index: 1;
+			position: static;
+			top: 22vw;
+		}
 
 
-        .Overskrift {
-            font-size: 1.6rem;
-        }
 
-    }
+		.center {
+			margin-left: 1vw;
+			margin-right: 1vw;
+			margin-top: 1rem;
+		}
 
-    @media only screen and (max-width:504px) {
+		header {
+			height: 40vh;
+			width: 100%;
+		}
+
+		.forsidetekst2,
+		.forsidetekst3,
+		.forsidetekst4 {
+			height: 100%;
+			padding: 1vw;
+		}
+
+	}
+
+	@media only screen and (max-width:570px) {
 
 
-        .Overskrift {
-            font-size: 1.5rem;
-        }
+		.Overskrift {
+			font-size: 1.6rem;
+		}
 
-    }
+	}
 
-    @media only screen and (max-width:498px) {
+	@media only screen and (max-width:504px) {
 
 
-        .Overskrift {
-            font-size: 1.1rem;
-        }
+		.Overskrift {
+			font-size: 1.5rem;
+		}
 
-    }
+	}
+
+	@media only screen and (max-width:498px) {
+
+
+		.Overskrift {
+			font-size: 1.1rem;
+		}
+
+	}
+
 </style>
 
 <body>
-    <header>
-        <div class="forsidesplash"></div>
-        <div class="head">
+	<header>
+		<div class="forsidesplash"></div>
+		<div class="head">
 
-            <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
-            <h1 class="Overskrift" id="Overskrift">KALKLANDET - Østsjællands Museum</h1>
-        </div>
-        <div class="dropdown">
-            <span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
-                <div class="pilnedbeholder">
-                    <h1 class="tekstmenu">Info</h1>
-                    <div class="pilned">
-                        <img alt="pilned" src="Billeder/DropDown/pilned.png">
-                    </div>
-                </div>
-            </span>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a href="OmOs.html">Om os</a></li>
-                    <li><a href="Nyheder.html">Nyheder</a></li>
-                    <li><a href="FlereAttraktioner%20.html">Flere attraktioner</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="forsideinfotekst">
-            <div class="forsideoverskrift"></div>
-            <div class="forsidetekst"></div>
-        </div>
-    </header>
-    <div class="forsidecontainer">
-        <div class="white"></div>
-        <div class="center">
-
-
-            <div class="forsidebilleder">
-                <a href="KoldkrigsmuseumStevnsfort.html">
-                    <div class="forsidebillede1"><img src="Billeder/Forside/KoldkrigsMuseum.png" alt="koldkrigsmuseum" onmouseover="this.src='Billeder/Forside/KoldkrigsmuseumHover.png'" onmouseout="this.src='Billeder/Forside/KoldkrigsMuseum.png'"></div>
-                </a>
-                <a href="StevnsKlint.html">
-                    <div class="forsidebillede2"><img src="Billeder/Forside/StevnsKlint.png" alt="Stevns Klint" onmouseover="this.src='Billeder/Forside/StevnsKlintHover.png'" onmouseout="this.src='Billeder/Forside/StevnsKlint.png'"></div>
-                </a>
-                <a href="GeomuseumFaxe.html">
-                    <div class="forsidebillede3"><img src="Billeder/Forside/GeomuseumFaxe.png" alt="Geomuseum Faxe" onmouseover="this.src='Billeder/Forside/GeoHover.png'" onmouseout="this.src='Billeder/Forside/GeomuseumFaxe.png'"></div>
-                </a>
-            </div>
-            <div class="forsideindhold">
-
-                <div class="forsidetekst2"></div>
-
-                <div class="forsidetekst4"></div>
-                <div class="forsidetekst3"></div>
+			<div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
+			<h1 class="Overskrift" id="Overskrift">KALKLANDET - Østsjællands Museum</h1>
+		</div>
+		<div class="dropdown">
+			<span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
+				<div class="pilnedbeholder">
+					<h1 class="tekstmenu">Info</h1>
+					<div class="pilned">
+						<img alt="pilned" src="Billeder/DropDown/pilned.png">
+					</div>
+				</div>
+			</span>
+			<div class="dropdown-content">
+				<ul>
+					<li><a href="OmOs.html">Om os</a></li>
+					<li><a href="Nyheder.html">Nyheder</a></li>
+					<li><a href="FlereAttraktioner%20.html">Flere attraktioner</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="forsideinfotekst">
+			<div class="forsideoverskrift"></div>
+			<div class="forsidetekst"></div>
+		</div>
+	</header>
+	<div class="forsidecontainer">
+		<div class="white"></div>
+		<div class="center">
 
 
-            </div>
+			<div class="forsidebilleder">
+				<a href="KoldkrigsmuseumStevnsfort.html">
+					<div class="forsidebillede1"><img src="Billeder/Forside/KoldkrigsMuseum.png" alt="koldkrigsmuseum" onmouseover="this.src='Billeder/Forside/KoldkrigsmuseumHover.png'" onmouseout="this.src='Billeder/Forside/KoldkrigsMuseum.png'"></div>
+				</a>
+				<a href="StevnsKlint.html">
+					<div class="forsidebillede2"><img src="Billeder/Forside/StevnsKlint.png" alt="Stevns Klint" onmouseover="this.src='Billeder/Forside/StevnsKlintHover.png'" onmouseout="this.src='Billeder/Forside/StevnsKlint.png'"></div>
+				</a>
+				<a href="GeomuseumFaxe.html">
+					<div class="forsidebillede3"><img src="Billeder/Forside/GeomuseumFaxe.png" alt="Geomuseum Faxe" onmouseover="this.src='Billeder/Forside/GeoHover.png'" onmouseout="this.src='Billeder/Forside/GeomuseumFaxe.png'"></div>
+				</a>
+			</div>
+			<div class="forsideindhold">
+
+				<div class="forsidetekst2"></div>
+
+				<div class="forsidetekst4"></div>
+				<div class="forsidetekst3"></div>
 
 
-        </div>
+			</div>
 
 
-        <footer style="background-color:rgb(254, 100, 0);">
+		</div>
 
 
-
-            <div class="footerinfo">
-
-                <div class="box">
-
-                    <p style="color: white">
-                        <b>Østsjællands Museum<br>
-                            Rådhusvej 2<br>
-                            4640 Faxe<br>
-                            museum@oesm.dk<br><br>
-                            +45 56502806<br>
-                            Telefonen er åben mandag til fredag<br>
-                            fra kl. 9 til 15.</b></p>
-                </div>
-                <div class="box">
-                    <p style="color: white">
-                        <b>Kalklandet 2019:</b><br><br>
-                        1. april – 30. juni - alle dage kl. 11.00 - 15.00<br>
-                        1. juli – 30. september - alle dage kl. 10.00 - 17.00<br>
-                        1. oktober – 31. oktober - alle dage kl. 11.00 - 15.00<br><br>
-
-                        <b>Særlige åbningstider:</b><br><br>
-
-                        Efterårsferie i uge 42<br>
-                        Geomuseum Faxe - alle dage kl. 10.00 - 17.00<br>
-                        Koldkrigsmuseum Stevnsfort - alle dage kl. 10.00 - 17.00<br>
-                    </p>
-                </div>
-                <div class="box">
-                    <div class="SoMe">
-                        <div id="insta">
-                            <h4 style="color: white;">Find os på Instagram</h4>
-                            <img src="Billeder/Footer/Insta.png" alt="Langinsta">
-
-                        </div>
-                        <div id="facebook">
-                            <h4 style="color: white;">Find os på Facebook</h4>
-                            <img src="Billeder/Footer/Fb.png" alt="Langface">
-
-                        </div>
-                    </div>
-
-
-                    <div class="icon">
-                        <img src="Billeder/Footer/Insta.png" alt="facelogo">
-                    </div>
-
-                    <div class="icon">
-                        <img src="Billeder/Footer/Fb.png" alt="instalogo">
-                    </div>
-                </div>
-            </div>
+		<footer style="background-color:rgb(254, 100, 0);">
 
 
 
+			<div class="footerinfo">
 
-        </footer>
+				<div class="box">
 
-    </div>
+					<p style="color: white">
+						<b>Østsjællands Museum<br>
+							Rådhusvej 2<br>
+							4640 Faxe<br>
+							museum@oesm.dk<br><br>
+							+45 56502806<br>
+							Telefonen er åben mandag til fredag<br>
+							fra kl. 9 til 15.</b></p>
+				</div>
+				<div class="box">
+					<p style="color: white">
+						<b>Kalklandet 2019:</b><br><br>
+						1. april – 30. juni - alle dage kl. 11.00 - 15.00<br>
+						1. juli – 30. september - alle dage kl. 10.00 - 17.00<br>
+						1. oktober – 31. oktober - alle dage kl. 11.00 - 15.00<br><br>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", hentJson2);
+						<b>Særlige åbningstider:</b><br><br>
+
+						Efterårsferie i uge 42<br>
+						Geomuseum Faxe - alle dage kl. 10.00 - 17.00<br>
+						Koldkrigsmuseum Stevnsfort - alle dage kl. 10.00 - 17.00<br>
+					</p>
+				</div>
+				<div class="box">
+					<div class="SoMe">
+						<div id="insta">
+							<h4 style="color: white;">Find os på Instagram</h4>
+							<a href="https://www.instagram.com/oestsjaellandsmuseum/">
+								<img src="Billeder/Footer/Insta.png" alt="Langinsta">
+							</a>
+						</div>
+						<div id="facebook">
+
+							<h4 style="color: white;">Find os på Facebook</h4>
+							<a href="https://www.facebook.com/stevnsklint/">
+								<img src="Billeder/Footer/Fb.png" alt="Langface">
+							</a>
+						</div>
+
+					</div>
 
 
-        let forside;
+					<div class="icon">
+						<img src="Billeder/Footer/Insta.png" alt="facelogo">
+					</div>
 
-        async function hentJson2() {
-            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
-            //henter data filen
-            const myJson = await fetch(url);
-            //den hentede data skal tolkes som json
-            forside = await myJson.json();
-            //kald funktion der viser data i DOM
+					<div class="icon">
+						<img src="Billeder/Footer/Fb.png" alt="instalogo">
+					</div>
+				</div>
+			</div>
 
-            visIndhold2();
-        };
 
-        function visIndhold2() {
-            console.log(forside)
 
-            document.querySelector("header").innerHTML += `<style>
+
+		</footer>
+
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", hentJson2);
+
+
+		let forside;
+
+		async function hentJson2() {
+			const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+			//henter data filen
+			const myJson = await fetch(url);
+			//den hentede data skal tolkes som json
+			forside = await myJson.json();
+			//kald funktion der viser data i DOM
+
+			visIndhold2();
+		};
+
+		function visIndhold2() {
+			console.log(forside)
+
+			document.querySelector("header").innerHTML += `<style>
         header {
             background-image: url(${forside.splashforside.guid})
         }
     </style>
 `;
 
-            document.querySelector(".forsideoverskrift").innerHTML += forside.tekst;
-            document.querySelector(".forsidetekst").innerHTML += forside.tekst_copy;
-            document.querySelector(".forsidetekst2").innerHTML += forside.menubilledetekst1;
-            document.querySelector(".forsidetekst3").innerHTML += forside.menubilledetekst1_copy;
-            document.querySelector(".forsidetekst4").innerHTML += forside.menubilledetekst1_copy_copy;
-        }
-    </script>
+			document.querySelector(".forsideoverskrift").innerHTML += forside.tekst;
+			document.querySelector(".forsidetekst").innerHTML += forside.tekst_copy;
+			document.querySelector(".forsidetekst2").innerHTML += forside.menubilledetekst1;
+			document.querySelector(".forsidetekst3").innerHTML += forside.menubilledetekst1_copy;
+			document.querySelector(".forsidetekst4").innerHTML += forside.menubilledetekst1_copy_copy;
+		}
+
+	</script>
 
 </body>
 
