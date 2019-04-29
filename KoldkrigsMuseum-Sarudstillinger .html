@@ -7,8 +7,14 @@
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .lillemenu li a:hover {
+        .lillemenu li a {
+            color: white;
             background-color: #786d60;
+        }
+
+        h1 {
+            color: rgb(254, 100, 0);
+
         }
     </style>
 </head>
@@ -182,7 +188,7 @@
         let forside;
 
         async function hentJson() {
-            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Museumer/262";
             //henter data filen
             const myJson = await fetch(url);
             //den hentede data skal tolkes som json
@@ -195,12 +201,13 @@
 
         function visIndhold() {
             console.log(forside)
-            document.querySelector(".splash").innerHTML += `<style>
+            document.querySelector("header").innerHTML += `<style>
         header {
-            background-image: url(${forside.splashforside.guid})
+            background-image: url(${forside.splashbillede.guid})
         }
     </style>
-`;
+`
+
 
         };
     </script>

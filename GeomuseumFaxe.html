@@ -10,6 +10,10 @@
 
 
 <style>
+    .Geooverskrift h1 {
+        color: #87b52d;
+    }
+
     body {
         margin: 0;
     }
@@ -77,7 +81,6 @@
 
 
         <div class="Geooverskrift"></div>
-        <div class="Geotitel"></div>
         <div class="Geotekst1"></div>
         <div class="Geobillede"></div>
         <div class="Geotekst2"></div>
@@ -177,7 +180,7 @@
     </style>
 `;
 
-            document.querySelector(".Geotitel").innerHTML += GeomusemFaxeForside.titeloverskrift;
+
             document.querySelector(".Geotekst1").innerHTML += GeomusemFaxeForside.tekst;
 
             document.querySelector(".Geobillede").innerHTML += `<img class="Billeder" src=${GeomusemFaxeForside.billeder.guid} alt="billede">`;
