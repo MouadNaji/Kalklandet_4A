@@ -12,8 +12,8 @@ header {
 /**** BODY ****/
 
 body {
-		margin: 0;
-	}
+    margin: 0;
+}
 
 
 
@@ -250,6 +250,7 @@ img {
         display: flex;
         justify-content: space-between;
         margin: 3rem;
+        margin-bottom: 0;
 
     }
 
