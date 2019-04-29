@@ -35,6 +35,7 @@
 
 
         }
+
     </style>
     <header>
         <div class="head">
@@ -189,9 +190,15 @@
 
         function visIndhold() {
             console.log(forside)
-            document.querySelector(".splash").innerHTML += `<img class="SplashBillede" src=${forside.splashforside.guid} alt="billede">`;
+            document.querySelector(".splash").innerHTML += `<style>
+        header {
+            background-image: url(${forside.splashforside.guid})
+        }
+    </style>
+`;
 
         };
+
     </script>
 </body>
 

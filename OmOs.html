@@ -36,20 +36,20 @@
 
     <div class="center">
 
-    <div class="splash"></div>
-    <div class="container">
-        <div class="titel1"></div>
-        <div class="tekst1"></div>
-        <div class="titel2"></div>
-        <div class="tekst2"></div>
-        <div class="titel3"></div>
-        <div class="tekst3"></div>
+        <div class="splash"></div>
+        <div class="container">
+            <div class="titel1"></div>
+            <div class="tekst1"></div>
+            <div class="titel2"></div>
+            <div class="tekst2"></div>
+            <div class="titel3"></div>
+            <div class="tekst3"></div>
 
 
 
 
+        </div>
     </div>
-</div>
 
     <footer>
 
@@ -153,9 +153,15 @@
 
         function visIndhold() {
             console.log(forside)
-            document.querySelector(".splash").innerHTML += `<img class="SplashBillede" src=${forside.splashforside.guid} alt="billede">`;
+            document.querySelector(".splash").innerHTML += `<style>
+        header {
+            background-image: url(${forside.splashforside.guid})
+        }
+    </style>
+`;
 
         };
+
     </script>
 </body>
 

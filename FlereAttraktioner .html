@@ -6,44 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
-    
-    
+
+
     <style>
-                
+        .titlen,
+        .indhold,
+        .titlen2,
+        .indhold2,
+        .titel3,
+        .indhold3,
+        .billedet,
+        .titel4,
+        .indhold4,
+        .billedet2,
+        .titel5,
+        .indhold5,
+        .billedet3 {
+            margin-left: 15vw;
+            margin-right: 20vw;
+            margin-top: 1rem;
+        }
 
-.titlen, .indhold, .titlen2, .indhold2, .titel3, .indhold3, .billedet, .titel4, .indhold4, .billedet2, .titel5, .indhold5, .billedet3{
-    margin-left: 15vw;
-    margin-right: 20vw;
-    margin-top: 1rem;
-}
+        .titlen,
+        .indhold,
+        .titlen2,
+        .indhold2,
+        .titel3,
+        .indhold3,
+        .titel4,
+        .indhold4,
+        .titel5,
+        .indhold5 {
+            font-family: limestoneregular;
 
-.titlen, .indhold, .titlen2, .indhold2, .titel3, .indhold3, .titel4, .indhold4,.titel5, .indhold5{
-    font-family: limestoneregular;
-    
-}
+        }
 
-.titlen, .titlen2, .titel3, .titel4, .titel5{
-    font-weight: bold;
-    font-size: 3rem;
-}
+        .titlen,
+        .titlen2,
+        .titel3,
+        .titel4,
+        .titel5 {
+            font-weight: bold;
+            font-size: 3rem;
+        }
 
-.indhold, .indhold2, .indhold3, .indhold4, .indhold5{
-    font-size: 1.2rem;
-    font-weight: 600;   
-    
-}
+        .indhold,
+        .indhold2,
+        .indhold3,
+        .indhold4,
+        .indhold5 {
+            font-size: 1.2rem;
+            font-weight: 600;
 
-    
-    
-</style>
-    
-   
+        }
+    </style>
+
+
 </head>
 
 
 <body>
 
-<header>
+    <header>
         <div class="head">
             <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
             <h1 class="Overskrift" id="Overskrift">Kalklandet Østsjællands Musem</h1>
@@ -66,39 +90,69 @@
             </div>
         </div>
 
-        
+
     </header>
-    
-    
-    
-   <div class="titlen"></div>
-             <style>
-                
-}
-.titlen, .indhold, .titlen2, .indhold2, .titel3, .indhold3, .billedet, .titel4, .indhold4, .billedet2, .titel5, .indhold5, .billedet3{
-    margin-left: 15vw;
-    margin-right: 20vw;
-    margin-top: 1rem;
-}
 
-.titlen, .indhold, .titlen2, .indhold2, .titel3, .indhold3, .titel4, .indhold4,.titel5, .indhold5{
-    font-family: limestoneregular;
-    
-}
 
-.titlen, .titlen2, .titel3, .titel4, .titel5{
-    font-weight: bold;
-    font-size: 3rem;
-}
 
-.indhold, .indhold2, .indhold3, .indhold4, .indhold5{
-    font-size: 1.2rem;
-    font-weight: 600;
-    
-    
-}
-    
-    </style><div class="indhold"></div>
+    <div class="titlen"></div>
+    <style>
+        }
+
+        .titlen,
+        .indhold,
+        .titlen2,
+        .indhold2,
+        .titel3,
+        .indhold3,
+        .billedet,
+        .titel4,
+        .indhold4,
+        .billedet2,
+        .titel5,
+        .indhold5,
+        .billedet3 {
+            margin-left: 15vw;
+            margin-right: 20vw;
+            margin-top: 1rem;
+        }
+
+        .titlen,
+        .indhold,
+        .titlen2,
+        .indhold2,
+        .titel3,
+        .indhold3,
+        .titel4,
+        .indhold4,
+        .titel5,
+        .indhold5 {
+            font-family: limestoneregular;
+
+        }
+
+        .titlen,
+        .titlen2,
+        .titel3,
+        .titel4,
+        .titel5 {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        .indhold,
+        .indhold2,
+        .indhold3,
+        .indhold4,
+        .indhold5 {
+            font-size: 1.2rem;
+            font-weight: 600;
+
+
+        }
+    </style>
+    <div class="splash"></div>
+    <div class="indhold"></div>
     <div class="titlen2"></div>
     <div class="indhold2"></div>
     <div class="titel3"></div>
@@ -112,7 +166,7 @@
     <div class="billedet3"></div>
 
 
-  <footer>
+    <footer>
 
 
 
@@ -170,18 +224,19 @@
     </footer>
 
 
- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", hentJson2);
+        document.addEventListener("DOMContentLoaded", hentJson);
 
 
-        let forside;
+        let indhold;
 
         async function hentJson2() {
             const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/flere_attraktioner/232";
             //henter data filen
             const myJson = await fetch(url);
             //den hentede data skal tolkes som json
-            forside = await myJson.json();
+            indhold = await myJson.json();
             //kald funktion der viser data i DOM
 
             visIndhold2();
@@ -189,21 +244,49 @@
 
         function visIndhold2() {
             console.log(forside)
-            document.querySelector(".titlen").innerHTML += forside.titel;
-            document.querySelector(".indhold").innerHTML += forside.tekst;
-            document.querySelector(".titlen2").innerHTML += forside.titel_copy;
+            document.querySelector(".titlen").innerHTML += indhold.titel;
+            document.querySelector(".indhold").innerHTML += indhold.tekst;
+            document.querySelector(".titlen2").innerHTML += indhold.titel_copy;
 
-            document.querySelector(".indhold2").innerHTML += forside.tekst_copy;
-            document.querySelector(".titel3").innerHTML += forside.titel_copy_copy;
-            document.querySelector(".indhold3").innerHTML += forside.tekst_copy_copy;
-            document.querySelector(".billedet").innerHTML += `<img class="SplashBillede" src=${forside.billede.guid} alt="billede">`
-            document.querySelector(".titel4").innerHTML += forside.titel_copy_copy_copy;
-            document.querySelector(".indhold4").innerHTML += forside.tekst_copy_copy_copy;
-            document.querySelector(".billedet2").innerHTML += `<img class="SplashBillede" src=${forside.billede_copy.guid} alt="billede">`
-            document.querySelector(".titel5").innerHTML += forside.titel_copy_copy_copy_copy;
-            document.querySelector(".indhold5").innerHTML += forside.tekst_copy_copy_copy_copy;
-            
-            document.querySelector(".billedet3").innerHTML += `<img class="SplashBillede" src=${forside.billede_copy_copy.guid} alt="billede">`
+            document.querySelector(".indhold2").innerHTML += indhold.tekst_copy;
+            document.querySelector(".titel3").innerHTML += indhold.titel_copy_copy;
+            document.querySelector(".indhold3").innerHTML += indhold.tekst_copy_copy;
+            document.querySelector(".billedet").innerHTML += `<img class="SplashBillede" src=${indhold.billede.guid} alt="billede">`
+            document.querySelector(".titel4").innerHTML += indhold.titel_copy_copy_copy;
+            document.querySelector(".indhold4").innerHTML += indhold.tekst_copy_copy_copy;
+            document.querySelector(".billedet2").innerHTML += `<img class="SplashBillede" src=${indhold.billede_copy.guid} alt="billede">`
+            document.querySelector(".titel5").innerHTML += indhold.titel_copy_copy_copy_copy;
+            document.querySelector(".indhold5").innerHTML += indhold.tekst_copy_copy_copy_copy;
+
+            document.querySelector(".billedet3").innerHTML += `<img class="SplashBillede" src=${indhold.billede_copy_copy.guid} alt="billede">`
+        };
+
+        let forside;
+
+        async function hentJson() {
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
+            //henter data filen
+            const myJson = await fetch(url);
+            //den hentede data skal tolkes som json
+            forside = await myJson.json();
+            //kald funktion der viser data i DOM
+
+            visIndhold();
+
+        };
+
+        function visIndhold() {
+            console.log(forside)
+            document.querySelector(".splash").innerHTML += `<style>
+        header {
+            background-image: url(${forside.splashforside.guid})
+        }
+    </style>
+`;
+
+
+
+
         };
     </script>
 </body>
