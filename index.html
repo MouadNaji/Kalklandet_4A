@@ -10,6 +10,10 @@
 
 
 <style>
+	body {
+		margin: 0;
+	}
+
 	.forsideinfotekst {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -28,7 +32,7 @@
 	.forsidecontainer {
 		z-index: 1;
 		position: absolute;
-		top: 22vw;
+		top: 40%;
 
 	}
 
@@ -84,30 +88,39 @@
 		font-family: limestoneregular;
 	}
 
-	.forsidetekst2 {}
+	.forsidetekst2 {
+		padding: .4vw;
+		height: 140px;
+		background-color: #786d60;
+	}
 
 	.forsidetekst4 {
-		/*		border: .3vw solid rgb(135, 181, 45);*/
 		padding: .4vw;
+		height: 140px;
+		background-color: rgb(0, 130, 172);
 	}
 
 	.forsidetekst3 {
-		height: 100px;
-		/*		border: .3vw solid rgb(0, 130, 172);*/
+		height: 140px;
 		padding: .4vw;
+		background-color: rgb(135, 181, 45);
 	}
 
 
 
 	@media only screen and (max-width:600px) {
-		.forsidebilleder {}
+		.forsidebilleder {
+			grid-column-gap: 1.5%;
+
+		}
 
 		.forsidecontainer {
 			z-index: 1;
 			position: static;
 			top: 22vw;
-
 		}
+
+
 
 		.center {
 			margin-left: 1vw;
@@ -117,12 +130,42 @@
 
 		header {
 			height: 40vh;
+			width: 100%;
 		}
 
-		.forsideindhold {
-			display: none;
+		.forsidetekst2,
+		.forsidetekst3,
+		.forsidetekst4 {
+			height: 100%;
+			padding: 1vw;
 		}
 
+	}
+
+	@media only screen and (max-width:570px) {
+
+
+		.Overskrift {
+			font-size: 1.6rem;
+		}
+
+	}
+
+	@media only screen and (max-width:504px) {
+
+
+		.Overskrift {
+			font-size: 1.5rem;
+		}
+
+	}
+
+	@media only screen and (max-width:498px) {
+
+
+		.Overskrift {
+			font-size: 1.1rem;
+		}
 
 	}
 
