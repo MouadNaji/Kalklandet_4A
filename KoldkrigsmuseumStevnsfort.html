@@ -9,6 +9,11 @@
 </head>
 
 <style>
+    .lillemenu li a:hover {
+        background-color: #786d60;
+    }
+
+
     .Geotekst1,
     .Geotekst2 {
 
@@ -50,13 +55,14 @@
                 </ul>
             </div>
         </div>
-        <ul class="lillemenu">
-            <li><a href="#home">noget</a></li>
-            <li><a href="#news">random</a></li>
-            <li><a href="#contact">ved</a></li>
-            <li><a href="#about">ikke</a></li>
-        </ul>
+
     </header>
+<ul class="lillemenu">
+    <li><a href="KoldkrigsMuseum-FindVej.html">Find Vej</a></li>
+    <li><a href="KoldkrigsMuseum-Sarudstillinger%20.html">Særudstillinger</a></li>
+    <li><a href="KoldkrigsMuseum-PriserOgTider.html">Priser og Tider</a></li>
+</ul>
+
 
 
 
@@ -161,7 +167,7 @@
 
             document.querySelector("header").innerHTML += `<style>
         header {
-            background-image: url(${GeomusemFaxeForside.splashbillede.guid}) 
+            background-image: url(${GeomusemFaxeForside.splashbillede.guid})
         }
     </style>
 `;

@@ -104,9 +104,11 @@ li a:hover {
 
 .lillemenu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    margin-top: 10rem
+
+
+
 }
 
 .tekstmenu {
@@ -206,7 +208,7 @@ img {
 
 
 
-@media only screen and (min-width:602px) {
+@media only screen and (min-width:703px) {
 
     .SoMe {
 
@@ -250,7 +252,7 @@ img {
 }
 
 
-@media only screen and (min-width:601px) {
+@media only screen and (min-width:741px) {
 
     .icon img {
         display: none;
@@ -264,7 +266,7 @@ img {
 
 
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:740px) {
 
 
     .SoMe {

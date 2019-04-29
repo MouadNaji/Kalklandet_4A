@@ -10,6 +10,10 @@
 
 
 <style>
+    .lillemenu li a:hover {
+        background-color: #87b52d;
+    }
+
     .Geotekst1,
     .Geotekst2 {
 
@@ -33,7 +37,7 @@
         <div class="SplashBillede"></div>
         <div class="head">
             <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
-            <h1 class="Overskrift" id="Overskrift">Kalklandet Østsjællands Musem</h1>
+            <h1 class="Overskrift" id="Overskrift">Kalklandet Østsjællands Museum</h1>
         </div>
         <div class="dropdown">
             <span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
@@ -56,10 +60,9 @@
     </header>
 
     <ul class="lillemenu">
-        <li><a href="#home">noget</a></li>
-        <li><a href="#news">random</a></li>
-        <li><a href="#contact">ved</a></li>
-        <li><a href="#about">ikke</a></li>
+        <li><a href="GeomuseumFaxe-FindVej.html">Find Vej</a></li>
+        <li><a href="GeomuseumFaxe-GuidetTur%20.html">Guidet Tur</a></li>
+        <li><a href="GeomuseumFaxe-PriserOgTider.html">Priser og Tider</a></li>
     </ul>
 
 
@@ -165,7 +168,7 @@
 
             document.querySelector("header").innerHTML += `<style>
         header {
-            background-image: url(${GeomusemFaxeForside.splashbillede.guid}) 
+            background-image: url(${GeomusemFaxeForside.splashbillede.guid})
         }
     </style>
 `;
