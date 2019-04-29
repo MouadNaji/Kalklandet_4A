@@ -16,6 +16,7 @@
             color: rgb(254, 100, 0);
 
         }
+
     </style>
 </head>
 
@@ -56,7 +57,7 @@
 
         <div class="splash"></div>
         <div class="nyheder_container1">
-            <div class="nyheder_billede1"></div>
+
             <div class="nyheder_indhold1">
                 <div class="nyheder_overskrift1"></div>
                 <div class="nyhedertekst1"></div>
@@ -168,7 +169,7 @@
         function visIndhold2() {
             console.log(omosnyheder)
 
-            document.querySelector(".nyheder_billede1").innerHTML += `<img class="billede" src=${omosnyheder.bilde_copy.guid} alt="billede">`;
+
 
             document.querySelector(".nyheder_billede2").innerHTML += `<img class="billede" src=${omosnyheder.bilde.guid} alt="billede">`;
 
@@ -210,6 +211,7 @@
 
 
         };
+
     </script>
 </body>
 
