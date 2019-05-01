@@ -2,243 +2,328 @@
 <html lang="da">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Forside</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<style>
-		h1 {
-			color: rgb(254, 100, 0);
+    <style>
+        h1 {
+            color: rgb(254, 100, 0);
 
-		}
+        }
 
-		.lillemenu {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			text-align: center;
-
-
-
-		}
-
-		.lillemenu li a {
-			color: white;
-			background-color: #0082ad;
-		}
-
-		.titel1,
-		.tekst1,
-		.titel2,
-		.tekst2,
-		.titel3,
-		.tekst3,
-		.titel4,
-		.tekst4 {
-			font-family: limestoneregular;
-
-		}
+        .lillemenu {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
 
 
-		.tekst1,
-		.tekst2,
-		.tekst3,
-		.tekst4 {
-			font-weight: 600;
+
+        }
+
+        .lillemenu li a {
+            color: white;
+            background-color: #0082ad;
+        }
+
+        .titel1,
+        .tekst1,
+        .titel2,
+        .tekst2,
+        .titel3,
+        .tekst3,
+        .titel4,
+        .tekst4 {
+            font-family: limestoneregular;
+
+        }
 
 
-		}
-
-          .center {
-
-        border-left: solid 6px #0082ad;
-        border-right: solid 6px #0082ad;
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
-
-            @media only screen and (max-width:500px) {
-
-    .center {
-
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
-
-    }
+        .tekst1,
+        .tekst2,
+        .tekst3,
+        .tekst4 {
+            font-weight: 600;
 
 
-	</style>
+        }
 
-	<header>
-		<div class="head">
-			<div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
-			<h1 class="Overskrift" id="Overskrift">KALKLANDET - Østsjællands Museum</h1>
-		</div>
-		<div class="dropdown">
-			<span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
-				<div class="pilnedbeholder">
-					<h1 class="tekstmenu">Info</h1>
-					<div class="pilned">
-						<img alt="pilned" src="Billeder/DropDown/pilned.png">
-					</div>
-				</div>
-			</span>
-			<div class="dropdown-content">
-				<ul>
-					<li><a href="OmOs.html">Om os</a></li>
-					<li><a href="Nyheder.html">Nyheder</a></li>
-					<li><a href="FlereAttraktioner%20.html">Flere attraktioner</a></li>
-				</ul>
-			</div>
-		</div>
+        .container {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
 
-	</header>
-	<ul class="lillemenu">
-		<li><a href="StevnsKlint.html">Stevns Klint</a></li>
-		<li><a href="StevnsKlint-VigtigInfo.html">Vigtig information</a></li>
-	</ul>
 
-	<div class="center">
-		<div class="splash"></div>
-		<div class="container">
-			<div class="titel1"></div>
-			<div class="tekst1"></div>
-
-			<div class="titel2"></div>
-			<div class="tekst2"></div>
-
-			<div class="titel3"></div>
-			<div class="tekst3"></div>
-
-			<div class="titel4"></div>
-			<div class="tekst4"></div>
-		</div>
-		<div class="googlemaps">
-    <iframe class="googlemapsframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.794984153549!2d12.12345225774525!3d55.25545687939896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe83915a92cc99a34!2sGeomuseum+Faxe!5e1!3m2!1sda!2sdk!4v1556613402120!5m2!1sda!2sdk" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
-	</div>
-
-	<footer style="background-color:#0082ad;">
+        }
 
 
-		<div class="footerinfo">
+        .titel2,
+        .titel3,
+        .titel4 {
+            text-align: center;
 
-			<div class="box">
+        }
 
-				<p style="color: white">
-					<b>Østsjællands Museum<br>
-						Rådhusvej 2<br>
-						4640 Faxe<br>
-						museum@oesm.dk<br><br>
-						+45 56502806<br>
-						Telefonen er åben mandag til fredag<br>
-						fra kl. 9 til 15.</b></p>
-			</div>
-			<div class="box">
-				<p style="color: white">
-					<b>Kalklandet 2019:</b><br><br>
-					1. april – 30. juni - alle dage kl. 11.00 - 15.00<br>
-					1. juli – 30. september - alle dage kl. 10.00 - 17.00<br>
-					1. oktober – 31. oktober - alle dage kl. 11.00 - 15.00<br><br>
 
-				</p>
-			</div>
-			<div class="box">
-				<div class="SoMe">
-					<div id="insta">
-						<h4 style="color: white;">Find os på Instagram</h4>
-						<a href="https://www.instagram.com/oestsjaellandsmuseum/">
-							<img src="Billeder/Footer/Insta.png" alt="Langinsta">
-						</a>
-					</div>
-					<div id="facebook">
 
-						<h4 style="color: white;">Find os på Facebook</h4>
-						<a href="https://www.facebook.com/stevnsklint/">
-							<img src="Billeder/Footer/Fb.png" alt="Langface">
-						</a>
-					</div>
+        .findvejbox {
+            flex-grow: 0.5;
+            flex-basis: 50px;
+            width: 1rem;
+            height: auto;
 
-				</div>
+        }
 
-				<div class="icon">
-					<img src="Billeder/Footer/Insta.png" alt="facelogo">
-				</div>
+        .bil {
 
-				<div class="icon">
-					<img src="Billeder/Footer/Fb.png" alt="instalogo">
-				</div>
-			</div>
-		</div>
+            margin-left: 2rem;
+            margin-right: 2rem;
+
+        }
+
+        .center {
+
+            border-left: solid 6px #0082ad;
+            border-right: solid 6px #0082ad;
+            padding-right: 3rem;
+            padding-left: 3rem;
+        }
+
+        @media only screen and (max-width:500px) {
+
+            .center {
+
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+
+        }
+
+
+        @media only screen and (max-width:880px) {
+
+            .container {
+
+                display: flex;
+                flex-wrap: wrap;
+
+
+            }
+
+            .findvejbox {
+                flex-grow: 1;
+                flex-basis: 200px;
+                width: 1rem;
+                height: auto;
+
+            }
+
+            .bil {
+
+                margin-left: 0rem;
+                margin-right: 0rem;
+
+            }
 
 
 
 
-	</footer>
+        }
+    </style>
+
+    <header>
+        <div class="head">
+            <div class="Logo" id="ForsideLogo"><a href="index.html"><img src="Billeder/DropDown/logo.png" alt="Logo"></a></div>
+            <h1 class="Overskrift" id="Overskrift">KALKLANDET - Østsjællands Museum</h1>
+        </div>
+        <div class="dropdown">
+            <span class="dropDown"><img class="bruger" alt="bruger menu" src="Billeder/DropDown/BurgerMenu.png">
+                <div class="pilnedbeholder">
+                    <h1 class="tekstmenu">Info</h1>
+                    <div class="pilned">
+                        <img alt="pilned" src="Billeder/DropDown/pilned.png">
+                    </div>
+                </div>
+            </span>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="OmOs.html">Om os</a></li>
+                    <li><a href="Nyheder.html">Nyheder</a></li>
+                    <li><a href="FlereAttraktioner%20.html">Flere attraktioner</a></li>
+                </ul>
+            </div>
+        </div>
 
 
-	<script>
-		document.addEventListener("DOMContentLoaded", hentJson2);
-		document.addEventListener("DOMContentLoaded", hentJson);
+    </header>
+    <ul class="lillemenu">
+        <li><a href="StevnsKlint.html">Stevns Klint</a></li>
+        <li><a href="StevnsKlint-VigtigInfo.html">Vigtig information</a></li>
+    </ul>
+
+    <div class="center">
+        <div class="splash"></div>
+
+        <div class="titel1"></div>
+        <div class="tekst1"></div>
+
+        <div class="container">
+
+            <div class="findvejbox">
+                <div class="titel2"></div>
+                <a href="https://www.rejseplanen.dk/webapp/index.html">
+                    <img src="Billeder/Findvej/stevnstrain.png" alt="Tog">
+                </a>
+                <div class="tekst2"></div>
+            </div>
 
 
-		let omosnyheder;
+            <div class="findvejbox bil">
+                <div class="titel3"></div>
+                <a href="https://www.google.com/maps/dir//55.2556669,12.1230268/@55.255667,12.123027,1783m/data=!3m1!1e3?hl=da">
+                    <img src="Billeder/Findvej/stevnsbike.png" alt="Bil">
+                </a>
+                <div class="tekst3"></div>
+            </div>
 
-		async function hentJson2() {
-			const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/FindVej/211";
-			//henter data filen
-			const myJson = await fetch(url);
-			//den hentede data skal tolkes som json
-			omosnyheder = await myJson.json();
-			//kald funktion der viser data i DOM
+            <div class="findvejbox">
+                <div class="titel4"></div>
+                <a href="https://www.sydkystdanmark.dk/sydkystdanmark-ferie-paa-sydsjaelland-og-moen">
 
-			visIndhold2();
-		};
+                    <img src="Billeder/Findvej/stevnssleep.png" alt="Map">
 
-		function visIndhold2() {
-			console.log(omosnyheder)
-			document.querySelector(".titel1").innerHTML += omosnyheder.titel;
-			document.querySelector(".titel2").innerHTML += omosnyheder.titel_copy;
-			document.querySelector(".titel3").innerHTML += omosnyheder.titel_copy2;
-			document.querySelector(".titel4").innerHTML += omosnyheder.titel_copy4;
+                </a>
 
-			document.querySelector(".tekst1").innerHTML += omosnyheder.tekst;
-			document.querySelector(".tekst2").innerHTML += omosnyheder.tekst_copy_2;
-			document.querySelector(".tekst3").innerHTML += omosnyheder.tekst_copy_copy;
-			document.querySelector(".tekst4").innerHTML += omosnyheder.tekst_copy4;
+                <div class="tekst4"></div>
+            </div>
 
-		}
-		let forside;
+        </div>
+        <div class="googlemaps">
+            <iframe class="googlemapsframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.794984153549!2d12.12345225774525!3d55.25545687939896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe83915a92cc99a34!2sGeomuseum+Faxe!5e1!3m2!1sda!2sdk!4v1556613402120!5m2!1sda!2sdk" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
 
-		async function hentJson() {
-			const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Museumer/268";
-			//henter data filen
-			const myJson = await fetch(url);
-			//den hentede data skal tolkes som json
-			forside = await myJson.json();
-			//kald funktion der viser data i DOM
+    <footer style="background-color:#0082ad;">
 
-			visIndhold();
 
-		};
+        <div class="footerinfo">
 
-		function visIndhold() {
-			console.log(forside)
-			document.querySelector("header").innerHTML += `<style>
+            <div class="box">
+
+                <p style="color: white">
+                    <b>Østsjællands Museum<br>
+                        Rådhusvej 2<br>
+                        4640 Faxe<br>
+                        museum@oesm.dk<br><br>
+                        +45 56502806<br>
+                        Telefonen er åben mandag til fredag<br>
+                        fra kl. 9 til 15.</b></p>
+            </div>
+            <div class="box">
+                <p style="color: white">
+                    <b>Kalklandet 2019:</b><br><br>
+                    1. april – 30. juni - alle dage kl. 11.00 - 15.00<br>
+                    1. juli – 30. september - alle dage kl. 10.00 - 17.00<br>
+                    1. oktober – 31. oktober - alle dage kl. 11.00 - 15.00<br><br>
+
+                </p>
+            </div>
+            <div class="box">
+                <div class="SoMe">
+                    <div id="insta">
+                        <h4 style="color: white;">Find os på Instagram</h4>
+                        <a href="https://www.instagram.com/oestsjaellandsmuseum/">
+                            <img src="Billeder/Footer/Insta.png" alt="Langinsta">
+                        </a>
+                    </div>
+                    <div id="facebook">
+
+                        <h4 style="color: white;">Find os på Facebook</h4>
+                        <a href="https://www.facebook.com/stevnsklint/">
+                            <img src="Billeder/Footer/Fb.png" alt="Langface">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="icon">
+                    <img src="Billeder/Footer/Insta.png" alt="facelogo">
+                </div>
+
+                <div class="icon">
+                    <img src="Billeder/Footer/Fb.png" alt="instalogo">
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson2);
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+
+        let omosnyheder;
+
+        async function hentJson2() {
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/FindVej/211";
+            //henter data filen
+            const myJson = await fetch(url);
+            //den hentede data skal tolkes som json
+            omosnyheder = await myJson.json();
+            //kald funktion der viser data i DOM
+
+            visIndhold2();
+        };
+
+        function visIndhold2() {
+            console.log(omosnyheder)
+            document.querySelector(".titel1").innerHTML += omosnyheder.titel;
+            document.querySelector(".titel2").innerHTML += omosnyheder.titel_copy;
+            document.querySelector(".titel3").innerHTML += omosnyheder.titel_copy2;
+            document.querySelector(".titel4").innerHTML += omosnyheder.titel_copy4;
+
+            document.querySelector(".tekst1").innerHTML += omosnyheder.tekst;
+            document.querySelector(".tekst2").innerHTML += omosnyheder.tekst_copy_2;
+            document.querySelector(".tekst3").innerHTML += omosnyheder.tekst_copy_copy;
+            document.querySelector(".tekst4").innerHTML += omosnyheder.tekst_copy4;
+
+        }
+        let forside;
+
+        async function hentJson() {
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Museumer/268";
+            //henter data filen
+            const myJson = await fetch(url);
+            //den hentede data skal tolkes som json
+            forside = await myJson.json();
+            //kald funktion der viser data i DOM
+
+            visIndhold();
+
+        };
+
+        function visIndhold() {
+            console.log(forside)
+            document.querySelector("header").innerHTML += `<style>
         header {
             background-image: url(${forside.splashbillede.guid})
         }
     </style>
 `;
 
-		};
-
-	</script>
+        };
+    </script>
 </body>
 
 </html>
