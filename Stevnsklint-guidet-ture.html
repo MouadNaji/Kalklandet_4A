@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
     <style>
+        h1 {
+            color: rgb(254, 100, 0);
+
+        }
+
         .lillemenu {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -19,51 +21,15 @@
 
         }
 
-        h1 {
-            color: rgb(254, 100, 0);
-
-        }
-
-        @media only screen and (min-width:1100px) {
-            .container {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-column-gap: 10rem;
-            }
-
-        }
-
         .lillemenu li a {
             color: white;
-            background-color: #786d60;
-        }
-
-        .titel1,
-        .tekst1,
-        .titel2,
-        .tekst2,
-        .titel3,
-        .tekst3,
-        .titel4,
-        .tekst4 {
-            font-family: limestoneregular;
-
-        }
-
-
-        .tekst1,
-        .tekst2,
-        .tekst3,
-        .tekst4 {
-            font-weight: 600;
-
-
+            background-color: #0082ad;
         }
 
         .center {
 
-            border-left: solid 6px #786d60;
-            border-right: solid 6px #786d60;
+            border-left: solid 6px #0082ad;
+            border-right: solid 6px #0082ad;
             padding-right: 3rem;
             padding-left: 3rem;
         }
@@ -78,6 +44,9 @@
 
         }
     </style>
+</head>
+
+<body>
 
     <header>
         <div class="head">
@@ -104,48 +73,68 @@
 
     </header>
     <ul class="lillemenu">
-        <li><a href="KoldkrigsMuseum-FindVej.html">Find Vej</a></li>
-        <li><a href="KoldkrigsMuseum-Sarudstillinger%20.html">Særudstillinger</a></li>
-        <li><a href="KoldkrigsmuseumStevnsfort.html">Stevnsfort</a></li>
+        <li><a href="StevnsKlint.html">Stevns Klint</a></li>
+        <li><a href="StevnsKlint-VigtigInfo.html">Vigtig information</a></li>
+        <li><a href="Stevnsklint-guidet-ture.html">Guidet tur</a></li>
         <li><a href="Undervisning.html">Undervisning</a></li>
     </ul>
 
 
     <div class="center">
         <div class="splash"></div>
-        <div class="container">
-            <div class="beholder1">
-                <div class="titel1"></div>
-                <div class="tekst1"></div>
+        <div class="nyheder_container1">
+            <div class="nyheder_overskrift1"></div>
+            <div class="nyhedertekst1"></div>
+            <div class="nyheder_indhold1">
+
 
             </div>
-            <div class="beholder2">
-                <div class="titel2"></div>
-                <div class="tekst2"></div>
-                <div class="billede"></div>
+        </div>
+        <div class="nyheder_container2">
+
+            <div class="nyheder_indhold2">
+                <div class="nyheder_overskrift2"></div>
+                <div class="nyhedertekst2"></div>
+
+            </div>
+        </div>
+        <div class="nyheder_container3">
+
+            <div class="nyheder_indhold3">
+                <div class="nyheder_overskrift3"></div>
+                <div class="nyhedertekst3"></div>
+
+            </div>
+        </div>
+
+        <div class="nyheder_container4">
+
+            <div class="nyheder_indhold4">
+                <div class="nyheder_overskrift4"></div>
+                <div class="nyhedertekst4"></div>
             </div>
         </div>
     </div>
 
-    <footer style="background-color:#786d60 ;">
+    <footer style="background-color:#0082ad;">
+
 
 
         <div class="footerinfo">
 
             <div class="box">
 
-                <p style="color: white">
-                    <b>Koldkrigsmuseum Stevnsfort<br>
-                        Korsnæbsvej 60<br>
-                        4673 Rødvig<br>
-                        stevnsfort@oesm.dk<br><br>
-
+                <p style="color: white;">
+                    <b>Geomuseum Faxe<br>
+                        Østervej 2<br>
+                        4640 Faxe<br>
+                        geomuseum@oesm.dk<br><br>
                         +45 56502806<br>
                         Telefonen er åben mandag til fredag<br>
                         fra kl. 9 til 15.</b></p>
             </div>
             <div class="box">
-                <p style="color: white">
+                <p style="color: white;">
                     <b>Alle Museer har samme åbningstider.</b><br><br>
                     1. april – 30. juni - alle dage kl. 11.00 - 15.00<br>
                     1. juli – 30. september - alle dage kl. 10.00 - 17.00<br>
@@ -154,7 +143,8 @@
                     <b>Særlige åbningstider:</b><br><br>
 
                     Efterårsferie i uge 42<br>
-                    Koldkrigsmuseum Stevnsfort - alle dage kl. 10.00 - 17.00<br>
+                    Geomuseum Faxe - alle dage kl. 10.00 - 17.00<br>
+
                 </p>
             </div>
             <div class="box">
@@ -177,16 +167,14 @@
 
 
                 <div class="icon">
-                    <img src="Billeder/Footer/Fb.png" alt="facelogo">
+                    <img src="Billeder/Footer/Insta.png" alt="facelogo">
                 </div>
 
                 <div class="icon">
-                    <img src="Billeder/Footer/Insta.png" alt="instalogo">
+                    <img src="Billeder/Footer/Fb.png" alt="instalogo">
                 </div>
             </div>
         </div>
-
-
 
 
     </footer>
@@ -199,7 +187,7 @@
         let omosnyheder;
 
         async function hentJson2() {
-            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Priserogtider/228";
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Tur/363";
             //henter data filen
             const myJson = await fetch(url);
             //den hentede data skal tolkes som json
@@ -212,18 +200,22 @@
         function visIndhold2() {
             console.log(omosnyheder)
 
-            /*document.querySelector(".billede").innerHTML += `<img class="billede" src=${omosnyheder.billede.guid} alt="billede">`;*/
 
 
-            document.querySelector(".titel1").innerHTML += omosnyheder.titel;
-            document.querySelector(".tekst1").innerHTML += omosnyheder.tekst;
+            document.querySelector(".nyheder_overskrift1").innerHTML += omosnyheder.titel;
+            document.querySelector(".nyheder_overskrift2").innerHTML += omosnyheder.titel_copy;
+            document.querySelector(".nyheder_overskrift3").innerHTML += omosnyheder.titel_copy_copy;
+            document.querySelector(".nyheder_overskrift4").innerHTML += omosnyheder.titel_copy_copy_copy;
 
-            document.querySelector(".titel2").innerHTML += omosnyheder.titel_copy;
-            document.querySelector(".tekst2").innerHTML += omosnyheder.tekst_copy;
+            document.querySelector(".nyhedertekst1").innerHTML += omosnyheder.tekst;
+            document.querySelector(".nyhedertekst2").innerHTML += omosnyheder.tekst_copy;
+            document.querySelector(".nyhedertekst3").innerHTML += omosnyheder.tekst_copy_copy;
+            document.querySelector(".nyhedertekst4").innerHTML += omosnyheder.tekst_copy_copy_copy;
         }
+        let forside;
 
         async function hentJson() {
-            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Museumer/262";
+            const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/Museumer/160";
             //henter data filen
             const myJson = await fetch(url);
             //den hentede data skal tolkes som json
@@ -236,13 +228,12 @@
 
         function visIndhold() {
             console.log(forside)
-            document.querySelector("header").innerHTML += `<style>
+            document.querySelector(".splash").innerHTML += `<style>
         header {
             background-image: url(${forside.splashbillede.guid})
         }
     </style>
-`
-
+`;
 
         };
     </script>
