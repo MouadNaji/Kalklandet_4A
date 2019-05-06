@@ -300,20 +300,21 @@
         //Her difineres variablen forside
 
         async function hentJson2() {
+            //her startes en async funktion
             const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
-            //henter data filen som er lavet i wordpress
+            //her sættes link med rest api ind
             const myJson = await fetch(url);
-            //den hentede data skal tolkes som json
+            //her hentes data filen som er lavet i wordpress
             forside = await myJson.json();
-            //kald funktion der viser data i DOM
+            //den hentede data skal tolkes som json
 
             visIndhold2();
-            //kalder funktionen visIndhold2
+            //her kaldes funktion der viser data i DOM
         };
 
         function visIndhold2() {
             console.log(forside)
-            //srøger for at funktionen kommer op i console
+            //sørger for at funktionen kommer op i console
             document.querySelector("header").innerHTML += `<style>
         header {
             background-image: url(${forside.splashforside.guid})
