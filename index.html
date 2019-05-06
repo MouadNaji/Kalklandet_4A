@@ -165,6 +165,7 @@
         }
 
     }
+
 </style>
 
 <body>
@@ -292,37 +293,46 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", hentJson2);
+        //her bliver der sørget for at den går igang med funktionen hentJson2 efter DOM er loaded
 
 
         let forside;
+        //Her difineres variablen forside
 
         async function hentJson2() {
             const url = "http://sunnivahyllseth.com/kea/cms/wordpress//wp-json/wp/v2/forside/255";
-            //henter data filen
+            //henter data filen som er lavet i wordpress
             const myJson = await fetch(url);
             //den hentede data skal tolkes som json
             forside = await myJson.json();
             //kald funktion der viser data i DOM
 
             visIndhold2();
+            //kalder funktionen visIndhold2
         };
 
         function visIndhold2() {
             console.log(forside)
-
+            //srøger for at funktionen kommer op i console
             document.querySelector("header").innerHTML += `<style>
         header {
             background-image: url(${forside.splashforside.guid})
         }
     </style>
 `;
-
+            //Her hentes dataen ned på header tagget
             document.querySelector(".forsideoverskrift").innerHTML += forside.tekst;
+            //Her hentes dataen ned på .forsideoverskrift attributten
             document.querySelector(".forsidetekst").innerHTML += forside.tekst_copy;
+            //Her hentes dataen ned på .forsidetekst attributten
             document.querySelector(".forsidetekst2").innerHTML += forside.menubilledetekst1;
+            //Her hentes dataen ned på .forsidetekst2 attributten
             document.querySelector(".forsidetekst3").innerHTML += forside.menubilledetekst1_copy;
+            //Her hentes dataen ned på .forsidetekst3 attributten
             document.querySelector(".forsidetekst4").innerHTML += forside.menubilledetekst1_copy_copy;
+            //Her hentes dataen ned på .forsidetekst4 attributten
         }
+
     </script>
 
 </body>
